@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<!-- include aframe-ar.js -->
+<script src="../build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+	<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - example for a-frame
+	<br/>
+	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+</div>
+
 <html>
     
     <head>
@@ -23,14 +35,14 @@
 
 
 <body>
-    <a-scene embedded arjs> 
+    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         
         <a-marker preset='hiro'>
-		<a-box>
+		
 		<a-entity scale="5 5 5"> </a-entity>
             <a-image src="img/fire.png" scale="-1 1 1" rotation="-90 0 0"></a-image>
             <a-text value="HELLLO" color="red" rotation="-90 0 0"></a-text>
-			<a-box>
+			
 		</a-marker>
         
         <a-marker preset='pattern-tagger'>
