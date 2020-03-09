@@ -26,7 +26,8 @@
 <body>
     <a-scene embedded arjs> 
         <a-entity scale="5 5 5"> </a-entity>
-            <a-image src="img/tidepods.jpg" scale="-1 1 1" rotation="-90 0 0"></a-image>
+            <a-video width="320" height="240 controls>
+                 <source src="cats.mov" type="video/mov"></a-video>
             <a-text value="HELLLO" color="red" rotation="-90 0 0"></a-text>
             <!--a-animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite" easing="linear"></a-animation-->
        <a-marker-camera type='pattern' url='patterns/pattern-tagger.patt'></a-marker-camera>
