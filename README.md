@@ -38,7 +38,7 @@
             <a-image src="img/fire.png" scale="-1 1 1" rotation="-90 0 0"></a-image>
             <a-text value="HELLLO" color="red" rotation="-90 0 0"></a-text>
             <!--a-animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite" easing="linear"></a-animation-->
-        <a-marker-camera preset='patterns/pattern-tagger.patt'></a-marker-camera>
+        <a-marker-camera preset="custom" type="pattern" url='patterns/pattern-tagger.patt'></a-marker-camera>
     </a-scene>
     
 </body>
