@@ -25,9 +25,11 @@
 
 <body>
     <a-scene embedded arjs> 
-        <a-entity scale="5 5 5"> </a-entity>
-            <a-video width="15" height="20" controls>
-                 <source src="cats.mov" type="video/mov"></a-video>
+        <a-entity </a-entity>
+         <a-assets>
+            <video id="cats" autoplay loop="true" width="16" height="9" src="cats.mov"></video>
+          </a-assets>
+        
             <a-text value="HELLLO" color="red" rotation="-90 0 0"></a-text>
             <!--a-animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite" easing="linear"></a-animation-->
        <a-marker-camera type='pattern' url='patterns/pattern-tagger.patt'></a-marker-camera>
